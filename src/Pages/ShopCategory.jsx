@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import "./Styles/ShopCategory.css";
 import { ShopContextCreated } from "../Context/ShopContext";
 import dropdown_icon from "../Components/Assets/dropdown_icon.png";
