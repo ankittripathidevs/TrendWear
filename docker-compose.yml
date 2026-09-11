@@ -1,0 +1,10 @@
+services:
+  react-app:
+      build:
+          context: .
+          dockerfile: Dockerfile
+      image: react-node-app
+      container_name: react-node-container
+      ports:
+        - "5173:5173"
+      restart: unless-stopped
