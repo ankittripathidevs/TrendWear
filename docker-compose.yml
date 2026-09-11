@@ -1,10 +1,39 @@
 services:
-  react-app:
-      build:
-          context: .
-          dockerfile: Dockerfile
-      image: react-node-app
-      container_name: react-node-container
-      ports:
-        - "5173:5173"
-      restart: unless-stopped
+
+  # ===== React Frontend =====
+  react_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: reactNode-app
+    container_name: reactNode_container
+    networks:
+      - react-network
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:5173"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    restart: unless-stopped
+
+
+  # ===== Nginx Reverse Proxy =====
+  nginx:
+    build:
+      context: ./nginx
+    image: reactNode-nginx
+    container_name: nginx_container
+    ports:
+      - "80:80"
+    depends_on:
+      react_app:
+        condition: service_healthy
+    networks:
+      - react-network
+    restart: unless-stopped
+
+
+# ===== Docker Network =====
+networks:
+  react-network:
