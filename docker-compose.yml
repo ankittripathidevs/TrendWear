@@ -12,7 +12,6 @@ services:
     networks:
       - react-network
     healthcheck:
-      #test: ["CMD", "wget", "--spider", "-q", "http://localhost:5173"]
       test: ["CMD", "wget", "--spider", "-q", "http://127.0.0.1:5173"]
       interval: 10s
       timeout: 5s
