@@ -1,3 +1,4 @@
+import React from "react";
 import "./Styles/LoginSignup.css";
 import { useForm } from "react-hook-form"; // rect-hook-form
 import { ToastContainer, toast } from 'react-toastify'; // beautiful pop-up notification

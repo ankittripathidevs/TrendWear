@@ -108,7 +108,7 @@ This project follows a **component-based architecture**, with well-structured `C
 ## 🔗 Links
 
 - 🌐 **Live Demo**: [Live Demo](https://trendwear-clothingsite.vercel.app/)
-- 📁 **GitHub Repo**: [Source Code](https://github.com/ankittripatidevs/TrendWear)
+- 📁 **GitHub Repo**: [Source Code](https://github.com/ankittripathe/TrendWear)
 
 
 ## 💡 What I Learned
@@ -136,7 +136,7 @@ While building TrendWear, I enhanced my understanding of:
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/ankittripathidevs/TrendWear.git
+git clone https://github.com/ankittripathe/TrendWear.git
 cd TrendWear
 
 # 2. Install dependencies
@@ -150,8 +150,8 @@ npm run dev
 
 If you're passionate about frontend development, UI/UX, or React-based web apps — let’s connect and collaborate!
 
-🔗 [LinkedIn](https://linkedin.com/in/ankittripathidevs)  
-📧 ankittripathi.dev@gmail.com
+🔗 [LinkedIn](https://linkedin.com/in/ankittripathe)  
+📧 ankittripathe@gmail.com
 
 ## 🌐 Check Out My Portfolio
 
