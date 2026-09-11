@@ -1,4 +1,3 @@
-import React from "react";
 import "./CartItems.css";
 import { useContext } from "react";
 import { ShopContextCreated } from "../../Context/ShopContext";
